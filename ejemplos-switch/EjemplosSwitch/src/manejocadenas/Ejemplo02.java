@@ -16,6 +16,8 @@ public class Ejemplo02 {
         
         pais = "Ecuador";
         char letra = pais.charAt(0);
+        // el metodo charAt sirve para que pueda dar 
+        // la letra ubicada en el espacio 0
         System.out.printf("%s\n", letra);
         
     }
