@@ -31,6 +31,8 @@ public class Ejemplo031 {
         System.out.println("Ingrese su Universidad");
         String universidad = entrada.nextLine();
         // nombre = "atacames"
+        nombre = nombre.toLowerCase();
+
         char valor = nombre.charAt(0); // obtener el primer caracter de una
         // cadena
         //  L   o   j   a
@@ -41,13 +43,13 @@ public class Ejemplo031 {
             case 'i':
             case 'o':
             case 'u':
-                System.out.printf("%s %s con edad %d, es estudiante de la %s"
-                        , nombre.toUpperCase(),
+                System.out.printf("%s %s con edad %d, es estudiante de la %s",
+                         nombre.toUpperCase(),
                         apellido.toUpperCase(), edad, universidad);
 
             default:
-                System.out.printf("%s %s con edad %d, es estudiante de la %s"
-                        , nombre.toLowerCase(),
+                System.out.printf("%s %s con edad %d, es estudiante de la %s",
+                         nombre.toLowerCase(),
                         apellido.toLowerCase(), edad, universidad);
                 break;
 
